@@ -30,7 +30,7 @@ task_type = st.sidebar.selectbox(
 confidence = float(st.sidebar.slider(
     "Select Model Confidence", 30, 100, 50)) / 100
 
-model_path =r"best.pt"    #le chemin vers yolov8 entrainnés par les images et les labels des accessoires du câble HV
+model_path ="best.pt"    #le chemin vers yolov8 entrainnés par les images et les labels des accessoires du câble HV
 
 try:
     model = load_model(model_path)
